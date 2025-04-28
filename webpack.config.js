@@ -37,17 +37,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       filename: "index.html",
-      meta: {
-        "Content-Security-Policy": {
-          "http-equiv": "Content-Security-Policy",
-          content:
-            "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:;",
-        },
-      },
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/index.html",
-      filename: "index.html",
     }),
     new MiniCssExtractPlugin({
       filename: "styles/main.css",
